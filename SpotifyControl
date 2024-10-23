@@ -233,7 +233,7 @@ on run argv
         set info to info & "\n Album:    " & myAlbum
         set info to info & "\n Artwork:  " & myArtwork
         set info to info & "\n URI:      " & spotify url of current track
-        set info to info & "\n Duration: " & mytime & " ("& (round ((duration of current track / 1000)) rounding down) & " seconds)"
+        set info to info & "\n Duration: " & mytime & " ("& (duration of current track) & " ms)"
         set info to info & "\n Now at:   " & nowAt
         set info to info & "\n Player:   " & player state
         set info to info & "\n Volume:   " & sound volume
